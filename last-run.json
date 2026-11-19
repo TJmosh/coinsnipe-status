@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "about": "When the CoinSnipe nightly job last ran, and whether it finished. Run times only. Times are UTC; the job starts at 00:30 UTC.",
+  "updated_at": null,
+  "last_run": null,
+  "recent": []
+}
