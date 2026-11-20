@@ -1,11 +1,20 @@
-# The morning check (CoinSnipe P0.1b, 19 Nov 2026).
-# Every morning at 01:30 UTC it reads last-run.json. If last night's run is
-# missing, was skipped or failed, this check fails, and GitHub emails the
-# owner of this project. GitHub sometimes starts scheduled checks late.
+# The morning check (CoinSnipe P0.1b, 19 Nov 2026; changed 20 Nov).
+# It reads last-run.json. If last night's run is missing, was skipped or
+# failed, this check fails, and GitHub emails the owner of this project.
+# It runs:
+#   - right after the server writes last-run.json (about 00:30 UTC), so a
+#     failed or skipped night is reported within minutes;
+#   - at 01:30, 03:30 and 05:30 UTC, for a night with no report at all.
+#     GitHub often starts timed checks late (7.5 hours on 20 Nov 2026).
 name: morning-check
 on:
+  push:
+    branches: [main]
+    paths: [last-run.json]
   schedule:
     - cron: "30 1 * * *"
+    - cron: "30 3 * * *"
+    - cron: "30 5 * * *"
   workflow_dispatch:
 permissions:
   contents: read
