@@ -1,7 +1,17 @@
 {
   "schema": 1,
   "about": "When the CoinSnipe nightly job last ran, and whether it finished. Run times only. Times are UTC; the job starts at 00:30 UTC.",
-  "updated_at": null,
-  "last_run": null,
-  "recent": []
+  "updated_at": "2026-11-20T00:30:12Z",
+  "last_run": {
+    "date": "2026-11-20",
+    "started_at": "2026-11-20T00:30:10Z",
+    "finished_at": "2026-11-20T00:30:10Z",
+    "status": "ok"
+  },
+  "recent": [
+    {
+      "date": "2026-11-20",
+      "status": "ok"
+    }
+  ]
 }
