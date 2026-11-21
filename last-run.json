@@ -1,14 +1,18 @@
 {
   "schema": 1,
   "about": "When the CoinSnipe nightly job last ran, and whether it finished. Run times only. Times are UTC; the job starts at 00:30 UTC.",
-  "updated_at": "2026-11-20T00:30:12Z",
+  "updated_at": "2026-11-21T00:30:11Z",
   "last_run": {
-    "date": "2026-11-20",
-    "started_at": "2026-11-20T00:30:10Z",
-    "finished_at": "2026-11-20T00:30:10Z",
-    "status": "ok"
+    "date": "2026-11-21",
+    "started_at": "2026-11-21T00:30:10Z",
+    "finished_at": "2026-11-21T00:30:10Z",
+    "status": "skipped"
   },
   "recent": [
+    {
+      "date": "2026-11-21",
+      "status": "skipped"
+    },
     {
       "date": "2026-11-20",
       "status": "ok"
