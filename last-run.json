@@ -1,11 +1,11 @@
 {
   "schema": 1,
   "about": "When the CoinSnipe nightly job last ran, and whether it finished. Run times, and per data source only green or red and counts of coins and numbers saved; no market numbers. Times are UTC; the job starts at 00:30 UTC.",
-  "updated_at": "2026-11-27T00:42:57Z",
+  "updated_at": "2026-11-28T00:34:33Z",
   "last_run": {
-    "date": "2026-11-27",
-    "started_at": "2026-11-27T00:30:10Z",
-    "finished_at": "2026-11-27T00:42:56Z",
+    "date": "2026-11-28",
+    "started_at": "2026-11-28T00:30:10Z",
+    "finished_at": "2026-11-28T00:34:31Z",
     "status": "ok",
     "code_update_failed": false
   },
@@ -17,10 +17,14 @@
       "coins_saved": 85,
       "coins_not_listed": 15,
       "coins_failed": 0,
-      "rows_saved": 499325
+      "rows_saved": 609
     }
   ],
   "recent": [
+    {
+      "date": "2026-11-28",
+      "status": "ok"
+    },
     {
       "date": "2026-11-27",
       "status": "ok"
